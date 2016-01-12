@@ -69,15 +69,6 @@ void MultiSegment::writeStr(char s[])
     bool ch = false;
     while ((c = s[i]) != '\0')
     {
-        // Serial.print("\nc=");
-        // Serial.print(c);
-        // Serial.print("\nch=");
-        // Serial.print(ch);
-        // Serial.print("\ni=");
-        // Serial.print(i);
-        // Serial.print("\nci=");
-        // Serial.print(ci);
-        // Serial.print("\n");
         if (ci<dispLen || (ci==dispLen && c=='.'))
         {
             if (c >= '0' && c <= '9')

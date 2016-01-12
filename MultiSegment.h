@@ -11,13 +11,13 @@ class MultiSegment
 {
   public:
     MultiSegment(byte digits[], byte segments[], byte dispLen);
-    void clear();
-    void disable();
-    void enable();
-    void writeInt(int n);
-    void writeStr(char s[]);
-    void updateDisplay(unsigned long micros);
-    void updateDisplay();
+    void clear(); // clear display (nothing is displayed)
+    void disable(); // disable display (turn off)
+    void enable(); // enable display
+    void writeInt(int n); // display integer
+    void writeStr(char s[]); // display string (if string is longer than display, only first characters are displayed)
+    void updateDisplay(unsigned long micros); // update display, using external timer
+    void updateDisplay(); // update display using internal timer
   private:
     bool enabled;
     byte *digits;   // array with digits pins
