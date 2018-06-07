@@ -18,6 +18,7 @@ MultiSegment::MultiSegment(byte digits[], byte segments[], byte dispLen)
         pinMode(digits[j], OUTPUT);
     }
 }
+void multiSegment();
 
 void MultiSegment::clear()
 {
